@@ -78,6 +78,56 @@ main{
     display: flex;
 }
 
+/* Nav */
+.nav-container{
+    display: flex;
+}
+
+
+.logo{
+    width: 150px;
+    margin-left: 2rem;
+}
+
+.nav-top{
+    margin-top: 95px;
+    vertical-align: middle;
+    margin-left: 0.2rem;
+}
+
+.nav-top a{
+    color: var(--lightgrey);
+    text-decoration: none;
+}
+
+.nav-top li{
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+}
+
+.nav-top ul img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.nav-top h3{
+    color: var(--white);
+    vertical-align: middle;
+}
+
+.nav-bottom img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.download{
+    margin-bottom: 1px solid var(--lightgrey);
+}
+
+.usertext{
+    color: var(--white);
+}
+
 /* Menù */
 .main-container{
     width: calc(100% - 230px);
