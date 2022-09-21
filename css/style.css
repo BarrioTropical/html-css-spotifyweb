@@ -23,32 +23,102 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .wrap{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: var(--black);
 }
 
+.button{
+    background-color: var(--darkviolet);
+    color: var(--white);
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+/* Main Section */
 main{
     width: 100%;
     height: calc(100vh - 95px);
     display: flex;
 }
 
+/* Menù */
 .main-container{
     width: calc(100% - 230px);
     background-color: var(--violet);
     overflow: auto;
 }
 
+/* Topbar */
+aside{
+    width: 100%;
+    height: 95px;
+    background-color: var(--darkviolet);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Playlist Section */
 .inner-content{
     height: 100%;
     overflow-y: auto;
     color: var(--white);
 }
 
+/* Menu Section */
+.menu-spotify{
+    max-width: 80%;
+    margin: 0 auto;
+    color: var(--lightgrey);
+    margin-top: 95px;
+}
+
+.menu-spotify li{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.menu-spotify a{
+    color: var(--lightgrey);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+/* Navbar */
 .navbar{
     width: 100%;
     height: 95px;
@@ -64,11 +134,3 @@ nav{
     background-color: var(--black);
 }
 
-aside{
-    width: 100%;
-    height: 95px;
-    background-color: var(--darkviolet);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
