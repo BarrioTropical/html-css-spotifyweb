@@ -87,12 +87,21 @@ main{
 .logo{
     width: 150px;
     margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nav-playlist{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    vertical-align: middle;
 }
 
 .nav-top{
     margin-top: 95px;
     vertical-align: middle;
     margin-left: 0.2rem;
+    margin-bottom: 2rem;
 }
 
 .nav-top a{
@@ -110,9 +119,8 @@ main{
     vertical-align: middle;
 }
 
-.nav-top h3{
+.nav-playlist h3{
     color: var(--white);
-    vertical-align: middle;
 }
 
 .nav-bottom img{
