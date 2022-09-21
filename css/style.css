@@ -42,6 +42,13 @@ body{
     margin-right: 1rem;
 }
 
+h3{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.7rem;
+}
 
 .d-flex{
     display: flex;
@@ -115,6 +122,43 @@ aside{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Recently Played */
+.box-playlist{
+    padding-left: 1rem;
+}
+
+.recently-played{
+    padding-top: 1rem;
+}
+
+.cards{
+    text-align: center;
+}
+
+.card{
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.card:first-child{
+    margin-left: -1rem;
+}
+
+.card img{
+    padding-bottom: 1rem;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.card h3{
+    padding-bottom: 0.5rem;
+}
+
+.card{
+    width: calc((100% / 6) - 1rem);
 }
 
 
