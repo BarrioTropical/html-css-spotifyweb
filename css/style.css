@@ -91,6 +91,12 @@ main{
     margin-bottom: 2rem;
 }
 
+.nav-border{
+    border-left: 2px solid var(--green);
+    margin-left: -2.5rem;
+    padding-left: 1rem;
+}
+
 .nav-playlist{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -241,10 +247,50 @@ footer{
     font-size: 0.7rem;
 }
 
+.play{
+    width: 55%;
+}
+
+.play-icon{
+    height: 50px;
+    align-items: center;
+}
+
+.play-icon i{
+    color: var(--white);
+    margin-left: 30px;
+}
+
+.play ul{
+    display: flex;
+    justify-content: center;
+}
+
+.play ul li{
+    list-style: none;
+}
+
+.play i{
+    color: var(--grey);
+    margin-right: 1rem;
+}
+
 .footer-left img{
     margin: 0rem 1rem;
     width: 25%;
     padding: 1rem;
+}
+
+.footer-right{
+    height: 80px;
+    width: 15%;
+    align-items: center;
+    display: flex;
+}
+
+.footer-right i{
+    color: var(--white);
+    margin-right: 1rem;
 }
 
 nav{
@@ -253,3 +299,9 @@ nav{
     background-color: var(--black);
 }
 
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
