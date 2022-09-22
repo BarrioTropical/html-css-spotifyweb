@@ -78,14 +78,20 @@ main{
     display: flex;
 }
 
-/* Nav */
+/* Menù */
 .nav-container{
     display: flex;
+    width: 230px;
+    z-index: 1100;
 }
 
+.mobile-nav{
+    display: none;
+}
 
+/* Menù Top */
 .logo{
-    width: 100px;
+    width: 150px;
     margin-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -104,7 +110,7 @@ main{
 }
 
 .nav-top{
-    margin-top: 95px;
+    margin-top: 2rem;
     vertical-align: middle;
     margin-left: 0.2rem;
     margin-bottom: 2rem;
@@ -116,7 +122,7 @@ main{
 }
 
 .nav-top li{
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-size: 0.8rem;
 }
 
@@ -124,12 +130,12 @@ main{
     width: 20px;
     vertical-align: middle;
 }
-
+/* Menù Playlist */
 .nav-playlist h3{
     color: var(--white);
     margin-left: 2rem;
 }
-
+/* Menù Bottom */
 .nav-bottom img{
     width: 30px;
     vertical-align: middle;
@@ -152,9 +158,9 @@ main{
 
 /* Topbar */
 aside{
-    width: 100%;
+    width: calc(100% - 230px);
     height: 95px;
-    background-color: var(--darkviolet);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
@@ -216,6 +222,10 @@ aside{
     padding-bottom: 1rem;
     max-width: 200px;
     max-height: 200px;
+}
+
+.round{
+    border-radius: 50%;
 }
 
 .card h3{
@@ -319,5 +329,98 @@ aside{
 
 .audio-section i{
     margin-right: 1rem;
+}
+
+
+/* Responsive */
+@media screen and (max-width:1200px) {
+    .card{
+        display: flex;
+        width: calc((100% / 3) - 1rem);
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .card{
+        display: flex;
+        width: calc((100% / 2) - 1rem);
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card{
+        display: flex;
+        width: calc((100% / 2) - 1rem);
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .mobile-nav{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container{
+        width: calc(100% - 50px);
+    }
+
+
+    aside{
+        display: none;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    .mobile-nav ul li img{
+        width: 40px;
+        margin-bottom: 2rem;
+    }
+
+    .nav-bottom{
+        margin-top: 18rem;
+        text-align: center;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .card{
+        display: flex;
+        width: calc((100% / 2) - 1rem);
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+    .box-playlist{
+        padding: 1rem;
+    }
+
+    
+
 }
 
