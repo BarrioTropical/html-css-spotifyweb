@@ -85,17 +85,17 @@ main{
 
 
 .logo{
-    width: 150px;
+    width: 100px;
     margin-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.nav-border{
+/*.nav-border{
     border-left: 2px solid var(--green);
     margin-left: -2.5rem;
     padding-left: 1rem;
-}
+}*/
 
 .nav-playlist{
     margin-top: 1rem;
@@ -117,16 +117,17 @@ main{
 
 .nav-top li{
     line-height: 1.5rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .nav-top ul img{
-    width: 30px;
+    width: 20px;
     vertical-align: middle;
 }
 
 .nav-playlist h3{
     color: var(--white);
+    margin-left: 2rem;
 }
 
 .nav-bottom img{
@@ -314,5 +315,9 @@ aside{
 .audio-section {
     align-items: center;
     gap: 25px;
+}
+
+.audio-section i{
+    margin-right: 1rem;
 }
 
