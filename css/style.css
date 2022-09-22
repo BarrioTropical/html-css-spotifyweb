@@ -237,10 +237,13 @@ aside{
 }
 
 
+
+
 /* Player Footer */
 .footer-container{
-    height: 80px;
+    height: 90px;
     color: var(--white);
+    background-color: var(--darkgrey);
 }
 
 /* Footer Left*/
@@ -355,7 +358,6 @@ aside{
         width: calc((100% / 2) - 1rem);
         flex-direction: column;
         text-align: center;
-        
     }
 
     .mobile-nav{
@@ -365,28 +367,32 @@ aside{
 
 @media screen and (max-width:576px) {
     .card{
-        display: flex;
         width: calc((100% / 2) - 1rem);
         flex-direction: column;
         text-align: center;
-        display: none;
+        display: flex;
     }
 
 }
 
 @media screen and (max-width:375px) {
     .mobile-nav{
-        width: 50px;
+        width: 10px;
         display: flex;
         flex-direction: column;
     }
 
     .main-container{
-        width: calc(100% - 50px);
+        width: calc(100% - 30px);
+        text-align: center;
     }
 
 
-    aside{
+    .aside-topbar{
+        display: none;
+    }
+
+    .menu-spotify{
         display: none;
     }
 
@@ -410,17 +416,22 @@ aside{
 
     .card{
         display: flex;
-        width: calc((100% / 2) - 1rem);
+        width: calc(100% - 1rem);
         flex-direction: column;
         text-align: center;
-        display: none;
     }
 
     .box-playlist{
         padding: 1rem;
     }
 
-    
+    .footer-left{
+        display: none;
+    }
+
+    .footer-right{
+        display: none;
+    }
 
 }
 
