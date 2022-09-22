@@ -168,9 +168,11 @@
     </main>
 
 <!-- Player Footer -->
-<footer>
-    <div class="container-footer d-flex justify-between">
-        <div class="footer-left">
+
+<!-- Footer Left -->
+<footer class="footer-container">
+    <div class="foter-left-container d-flex justify-between">
+        <div class="footer-left d-flex">
             <img src="./img/sinister.jpeg">
             <div class="album">
             Sinister
@@ -178,13 +180,15 @@
             </div>
 
             <div class="wishlist">
-
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
             </div>
         </div>
 
 
-
-        <div class="play">
+<!-- Footer Center -->
+        <div class="play d-flex">
+            <div class="player-control d-flex">
             <ul class="play-icon">
                 <li><i class="fa-solid fa-shuffle fa-sm"></i></li>
                 <li><i class="fa-regular fa-circle-play fa-2xl"></i>
@@ -192,13 +196,16 @@
                 <li><i class="fa-solid fa-arrow-rotate-right fa-sm"></i></li>    
                 </li>
             </ul>
-            
+            </div> 
         </div>
 
-        <div class="footer-right">
+<!-- Footer Right -->
+        <div class="footer-right d-flex">
+            <div class="audio-section">
             <i class="fa-solid fa-bars fa-xs"></i>
             <i class="fa-solid fa-desktop fa-xs"></i>
             <i class="fa-solid fa-volume-high fa-xs"></i>
+            </div>
         </div>
     </div>
 </footer>
