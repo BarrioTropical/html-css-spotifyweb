@@ -42,6 +42,15 @@ body{
     margin-right: 1rem;
 }
 
+.button-scale{
+    transition: 0.3s;
+}
+
+.button-scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 h3{
     font-size: 1rem;
 }
@@ -83,6 +92,10 @@ main{
     display: flex;
     width: 230px;
     z-index: 1100;
+}
+
+.nav-top a:hover{
+    color: var(--white);
 }
 
 .mobile-nav{
@@ -196,6 +209,10 @@ aside{
     cursor: pointer;
 }
 
+.menu-spotify a:hover{
+    color: var(--white);
+}
+
 /* Recently Played */
 .box-playlist{
     padding-left: 1rem;
@@ -255,6 +272,15 @@ aside{
     z-index: 3000;
 }
 
+.album{
+    color: var(--lightgrey);
+}
+
+.album:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
 .footer-left {
     align-items: center;
     flex-basis: 25%;
@@ -281,6 +307,12 @@ aside{
     font-size: 0.7rem;
 }
 
+.song a:hover{
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Footer Center*/
 .play {
     flex-direction: column;
@@ -302,8 +334,12 @@ aside{
 }
 
 .play-icon i{
-    color: var(--white);
+    color: var(--lightgrey);
     margin-left: 30px;
+}
+
+.play-icon i:hover{
+    color: var(--white);
 }
 
 .player-control {
@@ -311,6 +347,49 @@ aside{
     gap: 40px;
     align-items: center;
 }
+
+.slidecontainer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.slidecontainer input{
+    width: 60%;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
 
 /* Footer Right*/
 .footer-right {
@@ -332,6 +411,12 @@ aside{
 
 .audio-section i{
     margin-right: 1rem;
+    color: var(--lightgrey);
+}
+
+.audio-section i:hover{
+    color: var(--white);
+    cursor: pointer;
 }
 
 
@@ -433,5 +518,8 @@ aside{
         display: none;
     }
 
+    .slidecontainer input{
+        width: 30%;
+    }
 }
 
